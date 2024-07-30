@@ -3,8 +3,8 @@
 # Create list
 # numbers = [1,2,3,4,5]
 # Using a constructor
-numbers = list((1,2,3,4,5))
-fruits = ['Apples', 'Oranges', 'Grapes', 'Pears']
+numbers = list((1, 2, 3, 4, 5))
+fruits = ["Apples", "Oranges", "Grapes", "Pears"]
 
 # Get value
 print(fruits[1])
@@ -13,13 +13,13 @@ print(fruits[1])
 print(len(fruits))
 
 # Append to list
-fruits.append('Mangos')
+fruits.append("Mangos")
 
 # Remove from list
-fruits.remove('Grapes')
+fruits.remove("Grapes")
 
 # Insert into position
-fruits.insert(2, 'Strawberries')
+fruits.insert(2, "Strawberries")
 
 # Remove from position
 fruits.pop(3)

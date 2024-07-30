@@ -1,6 +1,6 @@
 # Strings in python are surrounded by either single or double quotation marks. Let's look at string formatting and some string methods
 
-name = 'Brad'
+name = "Brad"
 age = 37
 
 # Concatenate
@@ -21,7 +21,7 @@ age = 37
 
 # String Methods
 
-s = 'hello there world'
+s = "hello there world"
 
 # Capitalize first letter
 print(s.capitalize())
@@ -39,23 +39,23 @@ print(s.swapcase())
 print(len(s))
 
 # Replace
-print(s.replace('world', 'everyone'))
+print(s.replace("world", "everyone"))
 
 # Count
 sub = "h"
 print(s.count(sub))
 
 # Starts with
-print(s.startswith('hello'))
+print(s.startswith("hello"))
 
 # Ends with
-print(s.endswith('d'))
+print(s.endswith("d"))
 
 # Split into a list
 print(s.split())
 
 # Find position
-print(s.find('r'))
+print(s.find("r"))
 
 # Is all alphanumeric
 print(s.isalnum())
@@ -65,4 +65,3 @@ print(s.isalpha())
 
 # Is all numeric
 print(s.isnumeric())
-

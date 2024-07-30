@@ -1,11 +1,11 @@
 # A variable is a container for a value, which can be of various types
 
-'''
+"""
 This is a 
 multiline comment
 or docstring (used to define a functions purpose)
 can be single or double quotes
-'''
+"""
 
 """
 VARIABLE RULES:
@@ -20,7 +20,7 @@ VARIABLE RULES:
 # is_cool = True    # bool
 
 # Multiple assigment
-x, y, name, is_cool = (1, 2.5, 'Brad', True)
+x, y, name, is_cool = (1, 2.5, "Brad", True)
 
 print(x, y, name, is_cool)
 

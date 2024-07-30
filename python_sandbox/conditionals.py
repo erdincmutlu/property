@@ -7,19 +7,19 @@ y = 1
 
 # Simple if
 if x == y:
-  print(f'{x} is equal to {y}')
+    print(f"{x} is equal to {y}")
 
 # If/else
 # if x > y:
 #   print(f'{x} is greater than {y}')
 # else:
 #   print(f'{x} is less than {y}')
-  
+
 # elif
 # if x > y:
 #   print(f'{x} is greater than {y}')
 # elif x == y:
-#   print(f'{x} is equal to {y}')  
+#   print(f'{x} is equal to {y}')
 # else:
 #   print(f'{x} is less than {y}')
 
@@ -27,7 +27,7 @@ if x == y:
 # if x > 2:
 #   if x <= 10:
 #     print(f'{x} is less than 2 and greater than 10')
-    
+
 
 # Logical operators (and, or, not) - Used to combine conditional statements
 
@@ -46,7 +46,7 @@ if x == y:
 
 # Membership Operators (not, not in) - Membership operators are used to test if a sequence is presented in an object
 
-numbers = [1,2,3,4,5]
+numbers = [1, 2, 3, 4, 5]
 
 # in
 # if x in numbers:
@@ -66,4 +66,4 @@ numbers = [1,2,3,4,5]
 
 # is not
 if x is not y:
-  print(x is not y)
+    print(x is not y)

@@ -18,10 +18,10 @@ today = date.today()
 timestamp = time()
 
 camel = camelcase.CamelCase()
-text = 'hello there world'
+text = "hello there world"
 
-email = 'test@test.com'
+email = "test@test.com"
 if validate_email(email):
-  print('Email is valid')
+    print("Email is valid")
 else:
-  print('Not an email')
+    print("Not an email")
