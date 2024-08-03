@@ -1,11 +1,13 @@
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.shortcuts import get_object_or_404, render
+from .choices import bedroom_choices, price_choices, state_choices
+
 
 from .models import Listing
 
 
 def index(request):
-    listings = Listing.objects.order_by('-list_date').filter(is_published=True)
+    listings = Listing.objects.order_by("-list_date").filter(is_published=True)
     paginator = Paginator(listings, 6)
     page_number = request.GET.get("page")
     paged_listings = paginator.get_page(page_number)
@@ -14,10 +16,15 @@ def index(request):
 
 
 def listing(request, listing_id):
-    listing=get_object_or_404(Listing, pk=listing_id)
-    context ={"listing": listing}
+    listing = get_object_or_404(Listing, pk=listing_id)
+    context = {"listing": listing}
     return render(request, "listings/listing.html", context)
 
 
 def search(request):
-    return render(request, "listings/search.html")
+    context = {
+        "bedroom_choices": bedroom_choices,
+        "price_choices": price_choices,
+        "state_choices": state_choices,
+    }
+    return render(request, "listings/search.html", context)
